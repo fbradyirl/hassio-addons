@@ -16,12 +16,8 @@ RUN \
 
 COPY supervisord.conf /etc
 
-ARG BUILD_ARCH
-
-RUN echo "BUILD_ARCH: ${BUILD_ARCH}"
-
 # Download AirConnect
-RUN wget --output-document=/bin/airupnp-${BUILD_ARCH} https://raw.githubusercontent.com/philippe44/AirConnect/master/bin/airupnp-${BUILD_ARCH} && chmod +x /bin/airupnp-${BUILD_ARCH}
-RUN wget --output-document=/bin/aircast-${BUILD_ARCH} https://raw.githubusercontent.com/philippe44/AirConnect/master/bin/aircast-${BUILD_ARCH} && chmod +x /bin/aircast-${BUILD_ARCH}
+RUN wget --output-document=/bin/airupnp-arm https://raw.githubusercontent.com/philippe44/AirConnect/master/bin/airupnp-arm && chmod +x /bin/airupnp-arm
+RUN wget --output-document=/bin/aircast-arm https://raw.githubusercontent.com/philippe44/AirConnect/master/bin/aircast-arm && chmod +x /bin/aircast-arm
 
 ENTRYPOINT ["supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf"]
