@@ -6,9 +6,5 @@
   "startup": "services",
   "boot": "auto",
   "map": ["config"],
-  "host_network": true,
-  "options": {
-  },
-  "schema": {
-  }
+  "host_network": true
 }
