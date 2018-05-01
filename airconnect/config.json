@@ -8,13 +8,7 @@
   "map": ["config"],
   "host_network": true,
   "options": {
-    "target": null,
-    "username": null,
-    "password": ""
   },
   "schema": {
-    "target": "url",
-    "username": "str",
-    "password": "str"
   }
 }
