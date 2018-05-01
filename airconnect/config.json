@@ -1,6 +1,6 @@
 {
   "name": "AirConnect",
-  "version": "0.3",
+  "version": "0.7",
   "slug": "airconnect",
   "description": "AirConnect: Send audio to UPnP/Sonos/Chromecast players using AirPlay",
   "startup": "services",
