@@ -1,8 +1,4 @@
-# fbradyirl's Home Assistant Add-ons
-
-![Project Stage][project-stage-shield]
-![Maintenance][maintenance-shield]
-[![License][license-shield]](LICENSE)
+# 🚀 fbradyirl's Home Assistant Add-ons
 
 A hopefully useful collection of HA add-ons made by fbradyirl.
 
